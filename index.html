@@ -10,23 +10,23 @@
 <body>
     <input placeholder="Digite o nome do contato">
     <p></p>
-    <button>Porcurar contato</button>
+    <button onclick="search()" >Porcurar contato</button>
 </body>
 
 
 <script>
     let p = document.querySelector('p')
-    let input = querySelector('input')
+    let input = document.querySelector('input')
 
     const contats = [
-        { name: 'Paulo', Number: '(67) 99249-0880' }
-        { name: 'Vitor', Number: '(68) 99260-6169' }
-        { name: 'Maria', Number: '(69) 99229-0665' }
+        { name: 'Paulo', Number: '(67) 99249-0880' },
+        { name: 'Vitor', Number: '(68) 99260-6169' },
+        { name: 'Maria', Number: '(69) 99229-0665' },
         { name: 'Jonatan', Number: '(70) 99317-1918' }
 
     ]
 
-    const search(){
+    function search(){
         console.log(input.value)
     }
 
