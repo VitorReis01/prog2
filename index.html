@@ -22,12 +22,19 @@
         { name: 'Paulo', Number: '(67) 99249-0880' },
         { name: 'Vitor', Number: '(68) 99260-6169' },
         { name: 'Maria', Number: '(69) 99229-0665' },
-        { name: 'Jonatan', Number: '(70) 99317-1918' }
+        { name: 'Jonatan', Number: '(70) 99317-1918' },
 
     ]
 
-    function search(){
-        console.log(input.value)
+    function search() {
+
+        for(let i = 0; i < contacts.length  ;i++){
+            PINNERhtml = `contato encontrado nome:${contacts [i].name} tel: ${contacts[i].Number}`
+
+            break
+          
+        } else {
+        p.innerHTML = "contato nao encontrado, tente novamente" }
     }
 
 
