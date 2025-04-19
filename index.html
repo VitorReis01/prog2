@@ -10,7 +10,7 @@
 <body>
     <input placeholder="Digite o nome do contato">
     <p></p>
-    <button onclick="search()" >Porcurar contato</button>
+    <button onclick="search()">Porcurar contato</button>
 </body>
 
 
@@ -28,14 +28,22 @@
 
     function search() {
 
-        for(let i = 0; i < contacts.length  ;i++){
-            PINNERhtml = `contato encontrado nome:${contacts [i].name} tel: ${contacts[i].Number}`
+        let contatoEncontrado = false;
+        let nomeBuscado = Input.value.trim();
 
-            break
-          
-        } else {
-        p.innerHTML = "contato nao encontrado, tente novamente" }
-    }
+
+
+        for (let i = 0; i < contacts.length; i++) {
+            if (contacts[i].name.tolowercase() === nomeBuscado.tolowercase()) 
+                P.innerHTML = `contato encontrado nome: ${contacts[i].name} tel: ${contacts[i].Number}`;
+            contatoEncontrado = true
+            break;
+
+        }
+
+        if (!contatoEncontrado) {
+            p.innerHTML = "contato nao encontrado, tente novamente"
+        }
 
 
 </script>
