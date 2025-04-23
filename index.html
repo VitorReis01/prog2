@@ -18,7 +18,7 @@
     let p = document.querySelector('p')
     let input = document.querySelector('input')
 
-    const contats = [
+    const contacts = [
         { name: 'Paulo', Number: '(67) 99249-0880' },
         { name: 'Vitor', Number: '(68) 99260-6169' },
         { name: 'Maria', Number: '(69) 99229-0665' },
@@ -27,23 +27,18 @@
     ]
 
     function search() {
-
-        let contatoEncontrado = false;
-        let nomeBuscado = Input.value.trim();
-
-
-
         for (let i = 0; i < contacts.length; i++) {
-            if (contacts[i].name.tolowercase() === nomeBuscado.tolowercase()) 
-                P.innerHTML = `contato encontrado nome: ${contacts[i].name} tel: ${contacts[i].Number}`;
-            contatoEncontrado = true
-            break;
+
+            if (input.value.toLocaleLowerCase() === contacts[i].name.toLowerCase()) {
+                p.innerHTML = `contato Encontrado Nome:${contacts[i].name}  tel: ${contacts[i].Number}`
+
+                break
+            } else {
+                p.innerHTML = "contato nao encontrado, tente novamente"
+            }
 
         }
-
-        if (!contatoEncontrado) {
-            p.innerHTML = "contato nao encontrado, tente novamente"
-        }
+    }
 
 
 </script>
