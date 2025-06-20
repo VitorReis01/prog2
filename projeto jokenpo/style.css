@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://picsum.photos/1600/900);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.buttons{
+    margin: 30px;
+    display: flex;
+    gap: 40px
+}
+
+
+button{
+    padding: 10px;
+    font-size: 60px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.container {
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+
+    opacity: 0.9;
+    
+}
+
+#rock {
+    background-color: #0b8fb8;
+    
+}
+
+#paper{
+    background-color: #b8209e
+}
+
+#scissors{
+    background-color: #c42929;
+}
+
+p{ 
+    font-weight: bold ;
+    margin-bottom: 10px;
+}
+
+
+.minha-pontuaçao span{
+
+    color: rgb( 21, 64, 137)
+
+}
+
+
+.pontuaçao-maquina span{
+
+    color: rgb(179, 10, 10)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
